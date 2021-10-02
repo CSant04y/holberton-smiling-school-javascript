@@ -1,0 +1,155 @@
+
+body {
+    font-family: 'Source Sans Pro', 'Coiny';
+}
+.hero-section {
+    background: url("/images/pic_1.jpg") no-repeat;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 1093px;
+}
+
+.hero-section-pricing {
+    background: url("images/pic_2.jpg") no-repeat;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: 1093px; */
+}
+
+.courses-section {
+    background: url("images/pic_3.jpg") no-repeat;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: 1093px; */
+}
+.hero-section-content {
+    margin-top: 10em;
+}
+
+
+/* Header Section
+    ==================*/
+
+ .iconMenu {
+    display: none;
+}
+.logo-smile {
+    width: 36.39px;
+    height: 29.46px;
+}
+
+.nav-button {
+    display: none;
+}
+
+.logo-text {
+    width: 112.83px;
+    height: 39px;
+    padding-left: 18px
+}
+
+.font-smileschool {
+    font: Coiny;
+}
+.pro-section{
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.hero-sec-title {
+    font-size: 120px;
+}
+
+.register-btn {
+    background-color: #C272FF;
+}
+
+.register-btn:hover {
+    opacity: 0.9;
+    
+}
+
+.learn-span {
+    color:#C272FF;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+}
+
+.hero-quote {
+    height: 70px;
+    font-family: Coiny;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+    width: 480px;
+
+}
+
+/* Carousel Section
+==================*/
+
+.carousel-section {
+    background-color: #C271FF;
+}
+
+.carousel-img {
+    width: 160px;
+    height: 160px;
+}
+
+.arrow-icon {
+    position: absolute;
+    height: 52.04px;
+    top: 53px;
+}
+
+.carousel-purple {
+    color: #C271FF;
+}
+
+.video-card {
+    width: 255px;
+    height: 400px;
+}
+
+/* Footer Section
+==================*/
+
+
+/* Media Queries
+==================*/
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 1386px;
+    }
+
+    .iconMenu {
+        display: block;
+        font-size: 34px;
+    }
+
+    .nav-button {
+        display: block;
+        position: absolute;
+        left: 10px;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+    .hero-sec-title {
+        font-size: 88px;
+    }
+}
