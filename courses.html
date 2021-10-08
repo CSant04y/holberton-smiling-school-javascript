@@ -52,40 +52,41 @@
             <!-- drop-down menu -->
             <section class="Input sections" style="background-color: #C271FF;">
                 <div class="container">
-                    <div class="row py-4">
-                        <div class="col-12 col-sm-12 col-lg-4 box1">
-                            <span class="text-white font-weight-bold drop-down-title">KEYWORDS</span>
-                            <div class="input-group mb-sm-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text holberton_school-icon-search_1"></span>
+                    <form class="keyword-form">
+                        <div class="row py-4">
+                            <div class="col-12 col-sm-12 col-lg-4 box1">
+                                <label class="text-white font-weight-bold drop-down-title" for="q">KEYWORDS</label>
+                                <div class="input-group mb-sm-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text holberton_school-icon-search_1"></span>
+                                    </div>
+                                    <input
+                                        onsearch="searchBar()"
+                                        type="search"
+                                        class="form-control search-text-area"
+                                        id="q"
+                                        placeholder="Search by keywords"
+                                    />
                                 </div>
-                                <input
-                                    type="search"
-                                    class="form-control search-text-area"
-                                    id="q"
-                                    aria-label="Default"
-                                    aria-describedby="inputGroup-sizing-default"
-                                    placeholder="Search by keywords"
-                                />
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 box2">
+                                <div>
+                                    <label for="topics-dropdown">TOPIC</label>
+                                </div>
+                                <select class="custom-select topic-menu white-bg" id="topics-dropdown" onchange="filterBy(this.value)">
+                                    
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 box3">
+                                <div>
+                                    <label for="sorts-dropdown">SORT BY</label>
+                                </div>
+                                <select class="custom-select sort-by-menu white-bg" id="sorts-dropdown" onchange="sortBy(this.value)">
+                                    
+                                </select>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4 box2">
-                            <div>
-                                <label for="topics-dropdown">TOPIC</label>
-                            </div>
-                            <select class="custom-select topic-menu white-bg" id="topics-dropdown" onchange="filterBy(this.value)">
-                                
-                            </select>
-                        </div>
-                        <div class="col-12 col-sm-6 col-lg-4 box3">
-                            <div class="input-group-prepend">
-                                <label for="sorts-dropdown">SORT BY</label>
-                            </div>
-                            <select class="custom-select sort-by-menu white-bg" id="sorts-dropdown" onchange="sortBy(this.value)">
-                                
-                            </select>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </section>
             <section class="section results bg-white">

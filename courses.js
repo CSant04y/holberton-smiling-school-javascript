@@ -7,7 +7,7 @@ function getDropDownMenu() {
       let topicsDropDown = '';
   
       for (let i = 0; i < topics.length; i++) {
-        topicsDropDown = `<option class="dropdown-item" value="${i + 1}"x>${topics[i]}</option>`;
+        topicsDropDown = `<option class="dropdown-item" value="${i + 1}">${topics[i]}</option>`;
         $("#topics-dropdown").append(topicsDropDown);
       }
   
@@ -19,7 +19,6 @@ function getDropDownMenu() {
       for (let j = 0; j < sorts.length; j++) {
         sortsDropDown = `<option class="dropdown-item" value="${j + 1}">${sorts[j].replace(/[_-]/g, " ")}</option>`;
         $("#sorts-dropdown").append(sortsDropDown);
-        console.log("Whats up?")
       }
   
     });
@@ -104,21 +103,10 @@ function getDropDownMenu() {
     });
   }
 
-  function searchVideos(){
-    const url = "https://smileschool-api.hbtn.info/courses";
-    $.get(
-        url,
-        data => {
-            const { courses } = data;
-            const keyword = $("#keywords").val().toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
-            let filteredKeyword = [];
-            filteredKeyword = courses.filter(function (element) {
-                return element.keywords.indexOf(keyword) >= 0
-            });
-            generateCards(filteredKeyword);
-        }
-    )
+  function searchBar(event) {
+    console.log("I AM HERE")
 
+    const url = "https://smileschool-api.hbtn.info/courses";
     $.ajax({
       url: "https://smileschool-api.hbtn.info/courses",
       method: "GET",
@@ -126,12 +114,12 @@ function getDropDownMenu() {
       beforeSend: isLoaded(true, ".search-text-area"),
       success: function(data) {
         const { courses } = data;
-        const keyword = $("#q").val()
+        const keyword = $("#q").val();
 
         console.log(keyword);  
       }
     })
-  }
+  };
 
   function isLoaded(status, element) {
     if (status) {
