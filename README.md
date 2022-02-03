@@ -10,7 +10,6 @@
 ![desktop](./images/Desktop/02_SMILESCHOOL_PRICING_desktop@2x.png)
 ![desktop](./images/Desktop/03_SMILESCHOOL_COURSES_desktop@2x.png)
 
-[image:6CA70A47-F185-47E0-9C45-3A904E22407D-6947-000015ED3D887E58/3c71cc99d2fc1c12a3d3.jpg]
 # Requirements
 * ### You have to use Bootstrap
 * ### Your
@@ -28,3 +27,16 @@ styles.css### must be as small as you can -
 
 <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css” integrity=“sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh” crossorigin=“anonymous”>
 
+## About me
+
+### **Carlos Esquivel**
+Carlos Esquivel is originally from Tulsa. After taking a gap year and working in sales, he decided to make a switch into the technology industry to obtain skills in software engineering. As the pandemic hit, Holberton school provided an opportunity to learn and grow in a remote working environment.
+
+As a software engineering student, Carlos enjoys the creative aspects of problem solving such as how collaboration can foster the transfer of knowledge.
+
+* 📖 [Medium](https://1831-9922.medium.com/)
+* :bird:[Twitter](https://twitter.com/esquivelcarlo12)
+
+* :robot: [GitHub](https://github.com/CSant04y)
+
+* :briefcase: [LinkedIn](https://www.linkedin.com/in/carlos-esquivel-515768186/)
